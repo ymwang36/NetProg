@@ -1,0 +1,4 @@
+Two player CLI Game - Rock Paper Scissors
+A 2-player hand gesture game
+Rock beats Scissors, Scissors beat Paper, Paper beats Rock.
+Can you think of a winning strategy?

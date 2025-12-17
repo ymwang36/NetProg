@@ -1,0 +1,3 @@
+Two player GUI Game - Tic Tac Toe
+A 2-player game traditionally played with pen and paper
+First one to mark all three spaces of a row, column, or diagonal of the grid, wins!

@@ -1,0 +1,5 @@
+Multiplayer CLI Game - Guess
+A 3-player number guessing game.
+Guess a number from 1 to 100.
+
+https://www.youtube.com/watch?v=huGd4efgdPA

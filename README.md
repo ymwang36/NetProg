@@ -34,6 +34,14 @@ hw3/
     └── netutils.py
 ```
 
+### Prerequisite
+1. python3
+2. python venv
+    1. create the virtual environment by running `python -m venv .venv` on your terminal, this may take some time.
+    2. activate it by running `source venv/bin/activate` on Mac/Linux or `venv\Scripts\activate` on Windows CMD.
+    3. run `pip install pygame` to install pygame for GUI games, this may take some time.
+    4. run `deactivate` to leave the virtual environment once you're done.
+
 ### Tools
 #### `constants.py`
 Holds the host address and port number.
@@ -60,11 +68,10 @@ A directory for storing game files. Avoid making changes unless absolutely neces
 
 ### Developer
 #### `dev_client.py`
-Handle interation with server.
+Handle interation with server. Please run this file if the dev wishes to make changes to the games on the server.
 
 #### `games`
-A directory for storing and testing games.
-This system supports CLI and GUI games with 2 to 5 players.
+A directory for storing and testing games. This system supports CLI and GUI games with 2 to 5 players.
 
 If a developer wishes to upload a game, please make sure the game follows the following file structure
 ```bash
@@ -75,10 +82,13 @@ games/
     └── server.py
 ```
 The game must have `client.py`, `description.txt`, and `server.py`
+
 `description.txt` should have the description of the game.
 
 `client.py` should be able to run using `python client.py <host> <port>` where `<host>` and `<port>` is the host and port the client should connect to.
+
 `server.py` should be able to run using `python server.py <host> <port>` where `<host>` and `<port>` is the host and port the server should connect to. `server.py` should be able to accept exactly the amount of player the game needs. After the game, please terminate all players at the same time gracefully. 
+
 `server.py` and `client.py` may use `tools/netutils.py`, but they should pay attention to how the file is imported in the example games, if the file is not imported the same way, it may not work once it's uploaded to the system.
 
 Example games
@@ -88,8 +98,7 @@ Example games
 
 ### Player
 #### `player_client.py`
-Handle interaction with server.
-Players should run this file on their computer.
+Handle interaction with server. Players should run this file on their computer.
 
 #### `games`
 A directory for storing player's game files. **DO NOT** make changes to these files.

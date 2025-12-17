@@ -52,7 +52,7 @@ Handle length prefix framing protocol.
 * `recv_msg(sock)` - receive a python dict
 
 ### Server
-Please run `database.py`, `dev_server.py`, `player_server.py` (in that order) on a suitable server, make sure to change the host in `tools/constants.py` to match.
+Please run `database.py`, `dev_server.py`, `player_server.py` (in that order) on a suitable server, make sure to change the host in `tools/constants.py` to match. Please shutdown the servers in reverse order.
 
 #### `database.py`
 Stores the data, including user and game information.
